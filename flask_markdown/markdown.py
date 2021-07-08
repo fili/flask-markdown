@@ -4,9 +4,10 @@ Convert string to markdown.
 flask_markdown
 ~~~~~~~~~~~~~~~~~
 
-Originally from: https://github.com/dcolish/flask-markdown
+Originally from: https://github.com/dcolish/flask-markdown and
+https://github.com/brmullikin/flask-markdown
 
-This version can be found at: https://github.com/brmullikin/flask-markdown
+This version can be found at: https://github.com/fili/flask-markdown
 
 Markdown filter class for Flask
 To use::
@@ -90,9 +91,9 @@ class Markdown(object):
         self._instance = md.Markdown(**markdown_options)
 
         if app is not None:
-            self._init_extension(app)
+            self.init_app(app)
 
-    def _init_extension(self, app):
+    def init_app(self, app):
         """
         Initialize with app and add as an extension.
 
