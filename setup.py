@@ -26,7 +26,7 @@ setup(
     install_requires=[
         'Flask',
         'markdown',
-        'wheel
+        'wheel'
     ],
     tests_require=[
         'pytest',
