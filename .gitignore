@@ -7,3 +7,4 @@ Flask_Markdown.egg-info
 .eggs
 dist/
 *.egg-info/
+.note
